@@ -1,14 +1,14 @@
 "use client";
 import dynamic from "next/dynamic";
-// import TextBlock from "../components/TextBlock";
 
 const Page = () => {
+
+  // this simulates a more complex logic where a big list of component is built
   const Component = dynamic(() => import("../../components/TextBlock"));
-  console.log("here");
 
   return (
     <div>
-      <div>App Router</div>
+      <div>App Router with 'use client'</div>
       <Component />
     </div>
   );
